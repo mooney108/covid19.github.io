@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b46">
+  <meta name="description" content="Fictional COVID-19 health and community operations management prototype.">
+  <title>COVID-19 Management System</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="prototype-banner"><strong>Academic Prototype — Fictional Data Only</strong><span>Not for diagnosis, treatment, or real patient information.</span></div>
+  <main id="app" aria-live="polite"></main>
+  <div id="toast-region" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <dialog id="confirm-dialog" class="confirm-dialog">
+    <form method="dialog">
+      <h2 id="confirm-title">Please confirm</h2>
+      <p id="confirm-copy"></p>
+      <div class="form-actions"><button class="button secondary" value="cancel">Cancel</button><button id="confirm-yes" class="button danger" value="confirm">Confirm</button></div>
+    </form>
+  </dialog>
+</body>
+</html>
